@@ -31,3 +31,19 @@ const findPlatform = (arr, dep, n) => {
 
     return result;
 }
+
+/**
+ * 1. Define a function called findPlatform that takes in three parameters: arr, dep, and n
+ * 2. Initialize plat_needed and result to 1
+ * 3. Initialize i and j to 1 and 0 respectively
+ * 4. Loop through the array from i = 0 to i < n
+ *    a. Set plat_needed to 1
+ *    b. Loop through the array from j = i + 1 to j < n
+ *        i. If i is not equal to j
+ *            1. Check if the arrival time of train i is between the arrival and 
+ *              departure time of train j, or if the arrival time of train j is 
+ *              between the arrival and departure time of train i
+ *           2. If the above condition is true, increment plat_needed by 1
+ *   c. Set result to the maximum of result and plat_needed
+ *  5. Return result
+ */
