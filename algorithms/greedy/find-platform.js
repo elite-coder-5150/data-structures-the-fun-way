@@ -32,6 +32,33 @@ const findPlatform = (arr, dep, n) => {
     return result;
 }
 
+const findPlatform_dp = (arr, dep, n) => {
+    // Sort the arrival and departure times in ascending order
+    arr.sort((a, b) => a - b);
+    dep.sort((a, b) => a - b);
+
+    let plat_needed = 1, result = 1;
+    let i = 1, j = 0;
+
+    // Loop through the arrival and departure times
+    while (i < n && j < n) {
+        // If the next train arrives before the previous train departs, increment plat_needed
+        if (arr[i] <= dep[j]) {
+            plat_needed++;
+            i++;
+        } else {
+            // If the next train arrives after the previous train departs, decrement plat_needed
+            plat_needed--;
+            j++;
+        }
+
+        // Update the maximum number of platforms needed
+        result = Math.max(result, plat_needed);
+    }
+
+    return result;
+}
+
 /**
  * 1. Define a function called findPlatform that takes in three parameters: arr, dep, and n
  * 2. Initialize plat_needed and result to 1
