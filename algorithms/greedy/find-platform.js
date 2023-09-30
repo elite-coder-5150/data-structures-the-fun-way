@@ -60,6 +60,8 @@ const findPlatform_dp = (arr, dep, n) => {
 }
 
 /**
+ * pseudo code for the above algorithm.
+ * 
  * 1. Define a function called findPlatform that takes in three parameters: arr, dep, and n
  * 2. Initialize plat_needed and result to 1
  * 3. Initialize i and j to 1 and 0 respectively
@@ -74,3 +76,27 @@ const findPlatform_dp = (arr, dep, n) => {
  *   c. Set result to the maximum of result and plat_needed
  *  5. Return result
  */
+// unit tests
+// describe('findPlatform', () => {
+//     it('should return the minimum number of platforms required', () => {
+//         let arr = [900, 940, 950, 1100, 1500, 1800];
+//         let dep = [910, 1200, 1120, 1130, 1900, 2000];
+//         let n = arr.length;
+//         expect(findPlatform(arr, dep, n)).toEqual(3);
+
+//         arr = [1000, 1100, 1200];
+//         dep = [1020, 1130, 1300];
+//         n = arr.length;
+//         expect(findPlatform(arr, dep, n)).toEqual(1);
+
+//         arr = [900, 940, 950, 1100, 1500, 1800];
+//         dep = [910, 1200, 1120, 1130, 1900, 2000];
+//         n = arr.length;
+//         expect(findPlatform_dp(arr, dep, n)).toEqual(3);
+
+//         arr = [1000, 1100, 1200];
+//         dep = [1020, 1130, 1300];
+//         n = arr.length;
+//         expect(findPlatform_dp(arr, dep, n)).toEqual(1);
+//     });
+// });
