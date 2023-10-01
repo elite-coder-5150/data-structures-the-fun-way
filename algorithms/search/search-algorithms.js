@@ -4,7 +4,7 @@ export class Search {
     constructor() {
         this.compare = new Comparator();
     }
-    bindary(sortedArr, se, cmpCb) {
+    binary(sortedArr, se, cmpCb) {
         this.compare = new Comparator(cmpCb);
 
         let si = 0;
