@@ -1,8 +1,6 @@
-import {jump} from "../misc/search";
-
 const findMaxJumps = (arr, n) => {
     let dp = new Array(n).fill(0);
-    let ans = '';
+    let ans = 0 || undefined
 
     for (let i = n - 1; i >= 0; i--) {
         dp[i] = arr[i];
