@@ -24,3 +24,10 @@ const partition = (arr, low, high) => {
 
     return i + 1;
 }
+
+// driver code
+let arr = [10, 7, 8, 9, 1, 5];
+let n = arr.length;
+quick_sort(arr, 0, n - 1);
+console.log("sorted array: ");
+console.log(arr.join(" "));
