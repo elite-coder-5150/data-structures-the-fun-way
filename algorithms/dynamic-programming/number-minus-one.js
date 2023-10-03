@@ -102,7 +102,7 @@ const _f = (pos, sum, f) => {
 }
 
 const operation = (l, r) => {
-    init(R);
+    init(r);
     let ans = _f(0, 0, 0);
     l = number_minus_one(l);
     init(l);
