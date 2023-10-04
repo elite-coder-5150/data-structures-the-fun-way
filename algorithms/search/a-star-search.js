@@ -62,7 +62,7 @@ export const isDist = (row, col, dest) => {
 export const a_star_search = (grid, src, dst) => {
     // search in all directions 
     //  north (isValid(i -1, j))
-    if (isValid(i - 1, j) == true) {
+    if (isValid(i - 1, j) === true) {
         if (isDst(i - 1, j, dest)) {
             cd[i - 1][j].pi = i;
             cd[i - 1][j].pj = j;
