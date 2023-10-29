@@ -1,5 +1,5 @@
 /**
- * fings the pair of two elemetns that are close to each other
+ * finds the pair of two element that are close to each other
  * this implementation uses the two pointer technique to determine
  * the distance between two objects.
  * 
@@ -9,8 +9,9 @@
  */
 export const closestPair = (arr, n, target) => {
     let l = 0, r = n - 1;
-
-    let j = k = 0;
+    let i;
+    let j = 0,
+        k = 0;
 
     let minDiff = Number.MAX_SAFE_INTEGER;
 
@@ -23,7 +24,7 @@ export const closestPair = (arr, n, target) => {
         while (right <= left) {
             let mid = Math.floor((left + right) / 2)
 
-            if (arr[mid] + e == target) {
+            if (arr[mid] + e === target) {
                 l_result = i;
                 r_result = mid;
                 minDiff = 0;

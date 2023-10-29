@@ -1,6 +1,6 @@
 import { ShortestPath } from "./shortest-path";
 
-export const Johnso = (graph) => {
+export const Johnson = (graph) => {
     const tg = graph.clone();
     const ts = tg.addNode();
     const sp = new ShortestPath();

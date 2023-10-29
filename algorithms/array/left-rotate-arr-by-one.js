@@ -1,4 +1,4 @@
-const leftRotate = (arr, d, s) => {
+const leftRotate = (arr, d) => {
     for (let i = 0; i < d; i++) {
         leftRotateByOne();
     }

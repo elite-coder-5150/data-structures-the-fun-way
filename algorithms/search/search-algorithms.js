@@ -102,7 +102,10 @@ export class Search {
 }
 
 const search = new Search();
-search.bindary(term)
+let term = 'javascript'
+search.binary(term);
+search.interpolation();
+search.linear();
 /** 
     search.bindary();
     search.jump();
